@@ -1,18 +1,19 @@
 #include <Arduino.h>
 #include <DHT.h>
 
-#define DHTPIN 4      // DHT data pin connected to ESP32 GPIO4
+#define DHTPIN 12      // DHT data pin connected to ESP32 GPIO4
 #define DHTTYPE DHT22 // DHT 22 (AM2302)
+#define soil_moisture_pin 4
 
 DHT dht(DHTPIN, DHTTYPE);
 
-/* void setup() {
+void setup() {
   Serial.begin(115200);
   Serial.println(F("DHT22 Test!"));
   dht.begin();
 }
- */
-/**void loop() {
+
+void loop() {
   delay(2000); // Wait a few seconds between measurements.
 
   float h = dht.readHumidity();
@@ -34,6 +35,8 @@ DHT dht(DHTPIN, DHTTYPE);
   Serial.print(F("%  Temperature: "));
   Serial.print(t);
   Serial.print(F("°C "));
+  Serial.println();
+  Serial.println(analogRead(soil_moisture_pin));
   // Serial.print(f);
   // Serial.print(F("°F  Heat index: "));
   // Serial.print(hic);
@@ -41,4 +44,4 @@ DHT dht(DHTPIN, DHTTYPE);
   // Serial.print(hif);
   // Serial.println(F("°F"));
   Serial.println();
-}**/
+}
