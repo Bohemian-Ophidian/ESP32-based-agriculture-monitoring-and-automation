@@ -1,4 +1,4 @@
-#include <Arduino.h>
+/* #include <Arduino.h>
 #include <DHT.h>
 
 #define DHTPIN 12      // DHT data pin connected to ESP32 GPIO4
@@ -44,4 +44,4 @@ void loop() {
   // Serial.print(hif);
   // Serial.println(F("°F"));
   Serial.println();
-}
+} */

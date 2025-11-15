@@ -1,13 +1,13 @@
-#include <WiFi.h>
+//#include <WiFi.h>
 
 // Replace with your network credentials
-const char* ssid     = "ESP32-Access-Point";
-const char* password = "123456789";
+//const char* ssid     = "ESP32-Access-Point";
+//const char* password = "123456789";
 
 // Set web server port number to 80
-WiFiServer server(80);
+//WiFiServer server(80);
 
-void setup() {
+/* void setup() {
   Serial.begin(115200);
 
   // Connect to Wi-Fi network with SSID and password
@@ -65,4 +65,4 @@ void loop(){
     Serial.println("Client disconnected.");
     Serial.println("");
   }
-}
+} */
