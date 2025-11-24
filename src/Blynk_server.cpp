@@ -26,13 +26,13 @@ char password[] = "your_password";
 
 BlynkTimer timer;
 
-void setup(){
+void startup(){
     Serial.begin(115200);
     Blynk.begin( BLYNK_AUTH_TOKEN,ssid, password);
     timer.setInterval(timedelay, Sensors);
 }
 
-void loop(){
+void run_code(){
     Blynk.run();
     timer.run();
 }
